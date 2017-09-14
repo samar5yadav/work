@@ -1,0 +1,31 @@
+there are 10 unary operators in c
+! (logical negation),
+~ (one’s complement or bitwise negation),
+– (unary minus),
++ (unary plus),
+& (addressof),
+* (dereferencing),
+++ (pre-increment),
+— (pre-decrement),
+sizeof operator,
+(type) or cast operator
+
+unsigned int cannot be compared with int. return type of sizeof is also unsigned int
+
+int pointer cannot directly hold the value like 5 etc. you need to first give it some variable address. same goes with other pointers.
+
+if you write simply 0.1 anywhere example
+		float f = 0.1;
+        if (f == 0.1)
+            printf("True");
+        else
+            printf("False");
+
+answer will be false because f is float 0.1 is double, 0.1f is float 
+
+always remember if you are returning a local array from a function make it static. otherwise fuction parameters(like array) will die first  before complete return which will lead to unexpected behaviour
+
+always remember "strictly speaking, there is no pass-by-reference in C. You either pass the variable by-value, or you pass a pointer to that variable by-value."
+
+continue video from 50 mins https://www.youtube.com/watch?v=L8Etc2P16xw
+

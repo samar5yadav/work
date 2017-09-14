@@ -1,0 +1,1 @@
+youtube-dl -f 22 --playlist-start 1 -o "%(playlist_index)s-%(title)s.%(ext)s" -ci https://www.youtube.com/playlist?list=PLGKQkV4guDKH1TpfM-FvPGLUyjsPGdXOg

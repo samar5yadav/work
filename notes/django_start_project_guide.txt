@@ -1,0 +1,7 @@
+django-admin startproject sentsite
+python3 manage.py runserver
+virtualenv .
+pip3 install django
+python3 manage.py startapp webapp
+
+

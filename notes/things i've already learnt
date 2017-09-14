@@ -1,0 +1,30 @@
+itertools.groupby
+output = [list(group) for key,group in groupby(sorted(words,key=sorted),sorted)]
+
+b = a[:]
+
+#just remember to copy matrix only through deepcopy
+from copy import deepcopy
+b = deepcopy(a)
+
+
+
+python
+zip(*a)
+to transpose a n*n matrix
+
+preorder:traverse traditionally and keep reading
+
+inorder traversal: is like wall moving from left to right and touche and read nodes
+
+postorder: read only when coming out towards parent
+
+
+kadane algorithm to find the max sum subarray done
+
+
+retruiving string from huffman code tree done
+
+longest subsequence
+
+

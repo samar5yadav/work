@@ -4,6 +4,20 @@ struct Node{
   int data;
   struct Node* next;
 };
+
+struct Node* reverseRecursively(struct Node* head){
+  if (head->next==NULL){
+    return head;
+  }
+  struct Node* newHead;
+  newHead = reverseRecursively(head->next);
+  struct Node* temp;
+  temp=head->next;
+  temp->next=head;
+  head->next=NULL;
+  return newHead;
+
+}
 struct Node* reverseIteratively(struct Node* head){
 	if (head->next==NULL || head==NULL){
 		return head;		
@@ -74,7 +88,7 @@ struct Node* insert(struct Node* head,int data, int pos){
     return head;
   }
 }
-void 
+ 
 void printLinkList(struct Node* head){
   if (head==NULL){
 	printf("empty\n");
@@ -95,7 +109,7 @@ int main(){
   
   struct Node* head=NULL;
   while(1){
-	  printf("enter your choice 1. insert 2. delete 3.printLL 4.reverse 5. exit\n");
+	  printf("enter your choice 1. insert 2. delete 3.printLL 4.reverseInteratively 5.reverseRecursively 6.exit\n");
 	  int n;
   	  int pos,data;
   	  scanf("%d",&n);
@@ -116,7 +130,9 @@ int main(){
 		case 4:
 			head=reverseIteratively(head);
 			break;
-		case 5:
+                case 5: head=reverseRecursively(head);
+                        break;
+                case 6:
 		  exit(0);
 		  break;
 		default:
